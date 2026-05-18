@@ -3,18 +3,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="The Bag &amp; Pouch Combination by CIPRESES — a large leather tote paired with a detachable essentials pouch. The complete Mediterranean system. From €549.">
-  <title>Bag &amp; Pouch Combination — CIPRESES</title>
+  <meta name="description" content="The Essentials Pouch by CIPRESES — a leather pouch for the moments in between. Use it as a clutch, attach it to the tote, or carry it everywhere. From €149.">
+  <title>Essentials Pouch — CIPRESES</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <style>
-    /* Subtle slide-in for product info */
     .pd-info { animation: slideIn 0.9s cubic-bezier(0.25,0.46,0.45,0.94) both 0.15s; }
     @keyframes slideIn {
       from { opacity: 0; transform: translateX(18px); }
       to   { opacity: 1; transform: none; }
+    }
+
+    /* Gradient placeholder with centred label */
+    .pd-img-placeholder {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      background: linear-gradient(
+        148deg,
+        #D8C8B2 0%,
+        #CCBA9E 25%,
+        #C0AA8A 50%,
+        #B89A78 75%,
+        #AA8C6A 100%
+      );
+    }
+
+    .pd-img-placeholder-eyebrow {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-style: italic;
+      font-size: clamp(1.4rem, 3vw, 2.2rem);
+      color: rgba(58, 42, 26, 0.28);
+      letter-spacing: 0.04em;
+    }
+
+    .pd-img-placeholder-label {
+      font-family: 'Jost', system-ui, sans-serif;
+      font-size: 0.62rem;
+      font-weight: 400;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: rgba(58, 42, 26, 0.22);
+    }
+
+    .pd-img-placeholder-rule {
+      width: 32px;
+      height: 1px;
+      background: rgba(58, 42, 26, 0.18);
     }
   </style>
 </head>
@@ -46,15 +87,14 @@
   <!-- ======= PRODUCT DETAIL ======= -->
   <main class="pd-layout" aria-label="Product detail">
 
-    <!-- Image -->
+    <!-- Placeholder image -->
     <div class="pd-img">
-      <img
-        src="images/IMG_4353.png"
-        alt="CIPRESES bag and pouch combination in taupe leather, photographed on a stone terrace overlooking the Mediterranean"
-        class="real-img"
-        fetchpriority="high"
-        decoding="async"
-      >
+      <div class="pd-img-placeholder" aria-hidden="true">
+        <div class="pd-img-placeholder-rule"></div>
+        <span class="pd-img-placeholder-eyebrow">Photography</span>
+        <span class="pd-img-placeholder-label">Coming Soon</span>
+        <div class="pd-img-placeholder-rule"></div>
+      </div>
     </div>
 
     <!-- Info -->
@@ -62,24 +102,25 @@
       <div class="pd-breadcrumb" aria-label="Breadcrumb">
         <a href="shop.html">Shop</a>
         <span>&#8212;</span>
-        <span aria-current="page">Bag &amp; Pouch Combination</span>
+        <span aria-current="page">Essentials Pouch</span>
       </div>
 
-      <span class="label" style="display:block;margin-bottom:14px;">The Complete System</span>
-      <h1 class="pd-name">Bag &amp; Pouch<br><em style="font-style:italic;">Combination</em></h1>
-      <div class="pd-price">From €549 — €699</div>
+      <span class="label" style="display:block;margin-bottom:14px;">The Pouch</span>
+      <h1 class="pd-name">Essentials<br><em style="font-style:italic;">Pouch</em></h1>
+      <div class="pd-price">From €149 — €199</div>
 
       <hr class="pd-hr">
 
       <p class="pd-desc">
-        The complete CIPRESES system. A large leather tote paired with a detachable
-        essentials pouch — designed together, made to move together through every transition
-        of the day.
+        A leather pouch designed for the moments in between. Carry your valuables
+        from the beach to the table, use it as a clutch at dinner, or let it
+        travel with you everywhere as a standalone piece.
       </p>
 
       <p class="pd-desc" style="margin-top:16px;">
-        Carry everything to the beach. Detach the pouch when you move to the table.
-        The system disappears into your routine, the way good design always does.
+        It attaches magnetically to the interior of the Large Beach Bag, then detaches
+        in a single motion. Everything you need, nothing you do not — phone, cards,
+        cash, keys, a lipstick.
       </p>
 
       <hr class="pd-hr">
@@ -87,10 +128,10 @@
       <div class="pd-mat-title">Materials &amp; Details</div>
       <ul class="pd-materials">
         <li>Full-grain vegetable-tanned leather</li>
-        <li>Natural cotton canvas lining</li>
-        <li>Solid brass hardware</li>
-        <li>Magnetic detachable pouch system</li>
-        <li>Hand-stitched reinforced seams</li>
+        <li>Suede interior lining</li>
+        <li>Solid brass zipper and hardware</li>
+        <li>Leather wrist strap</li>
+        <li>Magnetic attachment clip for the tote</li>
         <li>Available in Natural, Cognac, and Espresso</li>
       </ul>
 
@@ -98,7 +139,7 @@
 
       <div style="font-size:0.82rem;color:var(--olive);line-height:1.8;">
         <span style="font-size:0.66rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--taupe);display:block;margin-bottom:8px;">Dimensions</span>
-        Bag: 45 × 32 × 14 cm &nbsp;·&nbsp; Pouch: 22 × 14 × 4 cm
+        22 × 14 × 4 cm &nbsp;·&nbsp; Wrist strap: 20 cm
       </div>
 
       <hr class="pd-hr">
@@ -109,7 +150,7 @@
       </div>
 
       <div class="pd-waitlist-msg" role="alert">
-        Thank you. We will be in touch when this combination becomes available.<br>
+        Thank you. We will be in touch when the Essentials Pouch becomes available.<br>
         <span style="font-size:0.8rem;color:var(--taupe);">Expected availability: Summer 2025</span>
       </div>
 
@@ -121,32 +162,6 @@
 
   </main>
 
-  <!-- ======= INTERIOR DETAIL STRIP ======= -->
-  <section class="pd-detail-strip" aria-label="Inside the bag">
-    <div class="pd-detail-strip-inner">
-      <div class="pd-detail-img reveal">
-        <img
-          src="images/IMG_4354.png"
-          alt="Inside the CIPRESES tote showing the zip pocket, attachment clip, key-strap, and water bottle sleeve"
-          decoding="async"
-        >
-      </div>
-      <div class="pd-detail-body reveal reveal-d1">
-        <span class="label">Inside the Tote</span>
-        <h3>Every detail<br><em style="font-style:italic;">considered.</em></h3>
-        <p>
-          A dedicated zip pocket for cards and passport. An attachment clip that holds
-          the pouch securely against the lining. A key-strap so you never search for
-          your keys. A water bottle sleeve that keeps your bottle upright and accessible.
-        </p>
-        <p style="margin-top:14px;">
-          The interior is lined in natural cotton canvas. The hardware is solid brass.
-          Everything is where it should be, for the day you are actually having.
-        </p>
-      </div>
-    </div>
-  </section>
-
   <!-- ======= RELATED PRODUCTS ======= -->
   <hr class="hr">
 
@@ -154,29 +169,27 @@
     <div class="wrap">
       <div style="margin-bottom:clamp(36px,5vw,60px);">
         <span class="label reveal" style="display:block;margin-bottom:10px;">Also Available</span>
-        <h3 class="reveal reveal-d1">Explore individually.</h3>
+        <h3 class="reveal reveal-d1">Complete the system.</h3>
       </div>
 
       <div class="preview-grid">
-        <a href="product-pouch.html" class="pcard reveal reveal-d1">
+        <a href="product-bag.html" class="pcard reveal reveal-d1">
           <div class="pcard-img">
-            <div class="photo photo--product-a" style="width:100%;height:100%;">
-              <span class="photo-label">Essentials Pouch</span>
-            </div>
-          </div>
-          <span class="label pcard-label">The Pouch</span>
-          <div class="pcard-name">Essentials Pouch</div>
-          <div class="pcard-price">From €149</div>
-          <span class="btn btn-ghost">Discover</span>
-        </a>
-
-        <a href="product-bag.html" class="pcard reveal reveal-d2">
-          <div class="pcard-img">
-            <img src="images/IMG_4353.png" alt="Large Leather Beach Bag" class="real-img" style="object-position:65% center;" decoding="async">
+            <img src="images/IMG_4353.png" alt="Large Leather Beach Bag" class="real-img" decoding="async">
           </div>
           <span class="label pcard-label">The Tote</span>
           <div class="pcard-name">Large Leather Beach Bag</div>
           <div class="pcard-price">From €449</div>
+          <span class="btn btn-ghost">Discover</span>
+        </a>
+
+        <a href="product.html" class="pcard reveal reveal-d2">
+          <div class="pcard-img">
+            <img src="images/IMG_4353.png" alt="Bag and Pouch Combination" class="real-img" decoding="async">
+          </div>
+          <span class="label pcard-label">The System</span>
+          <div class="pcard-name">Bag &amp; Pouch Combination</div>
+          <div class="pcard-price">From €549</div>
           <span class="btn btn-ghost">Discover</span>
         </a>
       </div>
